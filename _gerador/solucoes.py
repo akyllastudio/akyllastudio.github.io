@@ -82,7 +82,7 @@ SOLUCOES = [
         "faq": [
             ("Preciso instalar alguma coisa?", "Não. O PetFlow funciona pelo navegador, no computador do balcão, no notebook ou no tablet."),
             ("Dá para usar em mais de uma unidade?", "O sistema separa os dados por empresa. Para várias unidades, avaliamos o melhor formato na conversa."),
-            ("Consigo ver uma demonstração antes?", "Sim. Chame no WhatsApp que marcamos uma demonstração com o sistema funcionando."),
+            ("Meus dados ficam seguros?", "Sim. Cada pet shop acessa apenas os próprios dados, com perfis de acesso por usuário e registro de cada operação."),
         ],
     },
     {
@@ -282,7 +282,7 @@ def detalhe(s):
     nome = escape(s["nome"])
     status, status_cls = s["status"]
     dev = status_cls == "dev"
-    cta = "Quero ser projeto piloto" if dev else "Pedir uma demonstração"
+    cta = "Quero ser projeto piloto" if dev else "Quero essa solução"
     servico = escape(s["servico"], quote=True)
 
     menu = "".join(f"<li>{escape(m)}</li>" for m in s["menu"])
