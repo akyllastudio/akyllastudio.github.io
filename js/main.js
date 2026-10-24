@@ -39,3 +39,32 @@ document.querySelectorAll(".cartao, .dor, .projeto, .diferencial, .passos li, .p
 });
 
 document.getElementById("ano").textContent = new Date().getFullYear();
+
+// Detalhes das soluções: abre a janela do cartão clicado ou do endereço (#solucao-...)
+const abrirDetalhe = (id) => {
+  const d = document.getElementById(id);
+  if (!d || typeof d.showModal !== "function") return;
+  if (!d.open) d.showModal();
+  d.scrollTop = 0;
+  document.body.classList.add("com-detalhe");
+  if (location.hash !== `#${id}`) history.replaceState(null, "", `#${id}`);
+};
+document.querySelectorAll("[data-abrir]").forEach((el) =>
+  el.addEventListener("click", (e) => { e.preventDefault(); abrirDetalhe(el.dataset.abrir); })
+);
+document.querySelectorAll("dialog.detalhe").forEach((d) => {
+  d.addEventListener("close", () => {
+    document.body.classList.remove("com-detalhe");
+    if (location.hash === `#${d.id}`) history.replaceState(null, "", "#solucoes");
+  });
+  d.addEventListener("click", (e) => { // clique fora da janela fecha
+    const r = d.getBoundingClientRect();
+    const fora = e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+    if (e.target === d && fora) d.close();
+  });
+  d.querySelector("[data-fechar]").addEventListener("click", () => d.close());
+});
+if (location.hash.startsWith("#solucao-")) {
+  document.getElementById("solucoes")?.scrollIntoView();
+  abrirDetalhe(location.hash.slice(1));
+}
