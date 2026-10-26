@@ -60,6 +60,7 @@ body.com-detalhe { overflow: hidden; }
 .app__pill--a { color: #7ee2a8; background: rgba(37,211,102,.12); }
 .app__pill--b { color: #ffc56b; background: rgba(255,170,40,.12); }
 .app__pill--c { color: var(--destaque); background: rgba(var(--brilho), .16); }
+.app--print img { display: block; width: 100%; height: auto; }
 .app__aviso { font-size: .72rem; color: var(--texto-suave); text-align: center; margin: 10px 0 0; }
 
 .sol-dores { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }

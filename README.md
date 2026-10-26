@@ -54,6 +54,7 @@ Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de tr
 
 | Solução | O que faz | Situação |
 |---|---|---|
+| **[Cardápio Digital](https://akyllastudio.github.io/#solucao-cardapio-digital)** | Cardápio no celular com pedido pelo WhatsApp e QR Code nas mesas. 15 modelos prontos | Pronto para implantar |
 | **[PetFlow](https://akyllastudio.github.io/#solucao-petflow)** | Gestão para pet shops: clientes, animais, agenda, PDV, estoque e assinaturas | Pronto para implantar |
 | **[SaaS Restaurante](https://akyllastudio.github.io/#solucao-restaurante)** | Pedidos pelo WhatsApp, cardápio por QR Code e tela de cozinha | Pronto para implantar |
 | **[Painel Digital](https://akyllastudio.github.io/#solucao-painel-digital)** | Atendimento, filas de espera e painéis de chamada em tempo real | Base adaptável |

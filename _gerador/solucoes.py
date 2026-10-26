@@ -43,6 +43,7 @@ ICONES = {
     "imagem": '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/>',
     "envio": '<path d="M12 16V4M7 9l5-5 5 5M4 20h16"/>',
     "chat": '<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/>',
+    "cardapio": '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/>',
     "funil": '<path d="M3 4h18l-7 9v6l-4 2v-8z"/>',
 }
 
@@ -54,6 +55,37 @@ def svg(nome, cls=""):
 
 # ---------------------------------------------------------------- conteúdo
 SOLUCOES = [
+    {
+        "slug": "cardapio-digital", "nome": "Cardápio Digital", "icone": "cardapio", "segmento": "Delivery, mesas e balcão",
+        "status": ("Pronto para implantar", "pronto"),
+        "servico": "Solução Cardápio Digital (pedidos pelo WhatsApp)",
+        "imagem": "assets/img/cardapio-digital.jpg", "imagem_url": "cardápio digital · vitrine de modelos",
+        "titulo": "Seu cardápio no celular do cliente, com <em>pedido direto no WhatsApp</em>",
+        "descricao": "Uma página própria com produtos, fotos, preços, horários e endereço. O cliente monta o pedido, escolhe entrega, retirada ou mesa, e tudo chega organizado no seu WhatsApp. Sem aplicativo para baixar e sem comissão por pedido. São 15 modelos prontos em 3 estilos para escolher.",
+        "seo": "Cardápio digital com pedido pelo WhatsApp e QR Code na mesa para hamburguerias, pizzarias, restaurantes, espetinhos e pamonharias.",
+        "menu": [], "kpis": [], "lista": [],
+        "dores": [
+            ("Comissão em cada pedido", "Aplicativos de delivery ficam com uma parte de cada venda, todo mês."),
+            ("Cardápio em PDF ou foto", "Difícil de ler no celular, desatualizado e sem botão para pedir."),
+            ("Pedido incompleto no WhatsApp", "Falta endereço, troco ou adicional, e a conversa vai e volta."),
+        ],
+        "recursos": [
+            ("whats", "Pedido pronto no WhatsApp", "Itens, adicionais, total, entrega, retirada ou mesa, endereço, pagamento e troco numa mensagem só."),
+            ("qr", "QR Code nas mesas", "Plaquinhas para imprimir: o pedido chega com o número da mesa."),
+            ("estrela", "Tamanhos, adicionais e selos", "Preço promocional, tamanhos (pizza média, grande...), adicionais e selos como Mais pedido e Vegetariano."),
+            ("relogio", "Aberto ou fechado na hora", "Mostra se está aberto pelos horários da semana, inclusive quem fecha de madrugada."),
+            ("link", "Busca e categorias", "Busca e menu de categorias fixo no topo para o cliente achar rápido."),
+            ("raio", "Pronto para divulgar", "Endereço com mapa, redes sociais, botão de compartilhar e prévia bonita nos links."),
+        ],
+        "para_quem": ["Hamburguerias", "Pizzarias", "Restaurantes", "Espetinhos", "Pamonharias", "Lanchonetes"],
+        "inclui": ["Modelo escolhido com as suas cores", "Cardápio com os seus produtos e preços", "Plaquinhas com QR Code das mesas", "Publicação e link pronto para divulgar"],
+        "investimento": "A partir de R$ 1.200, com o seu cardápio cadastrado, as suas cores e as plaquinhas de QR Code. O valor final depende da quantidade de produtos e de fotos.",
+        "faq": [
+            ("Preciso pagar comissão por pedido?", "Não. O pedido vai direto para o seu WhatsApp, sem intermediário."),
+            ("Funciona para mesa e para delivery?", "Sim. O cliente escolhe entrega, retirada ou consumo na mesa, e o QR Code da mesa já informa o número."),
+            ("Posso mudar preços depois?", "Sim. Preços, itens e horários podem ser atualizados sempre que precisar."),
+        ],
+    },
     {
         "slug": "petflow", "nome": "PetFlow", "icone": "pet", "segmento": "Pet shops",
         "status": ("Pronto para implantar", "pronto"),
@@ -297,20 +329,15 @@ def detalhe(s):
                   if dev else
                   "Como a base já existe, a implantação é mais rápida e o custo menor do que um sistema do zero. O valor depende do tamanho da operação e das adaptações, e você recebe tudo por escrito antes de começar.")
 
-    return f'''
-    <dialog class="detalhe" id="solucao-{s["slug"]}" aria-labelledby="titulo-{s["slug"]}">
-      <button type="button" class="detalhe__fechar" data-fechar aria-label="Fechar">✕</button>
-      <div class="detalhe__hero">
-        <div>
-          <div class="sol-hero__selos">
-            <span class="selo">{svg(s["icone"], "selo__icone")} {nome} · {escape(s["segmento"])}</span>
-            <span class="status-tag status-tag--{status_cls}">{escape(status)}</span>
+    if s.get("imagem"):
+        visual = f'''
+          <div class="app app--print">
+            <div class="app__barra"><i></i><i></i><i></i><span>{escape(s["imagem_url"])}</span></div>
+            <img src="{s["imagem"]}" alt="" width="1440" height="900" loading="lazy">
           </div>
-          <h2 id="titulo-{s["slug"]}">{s["titulo"]}</h2>
-          <p class="detalhe__texto">{escape(s["descricao"])}</p>
-          <a href="#" class="btn" data-servico="{servico}">{svg("whats")} {cta}</a>
-        </div>
-        <div aria-hidden="true">
+          <p class="app__aviso">Vitrine real do projeto.</p>'''
+    else:
+        visual = f'''
           <div class="app">
             <div class="app__barra"><i></i><i></i><i></i><span>{s["slug"]}.akyllastudio</span></div>
             <div class="app__corpo">
@@ -324,7 +351,22 @@ def detalhe(s):
               </div>
             </div>
           </div>
-          <p class="app__aviso">Ilustração da interface. Dados fictícios.</p>
+          <p class="app__aviso">Ilustração da interface. Dados fictícios.</p>'''
+
+    return f'''
+    <dialog class="detalhe" id="solucao-{s["slug"]}" aria-labelledby="titulo-{s["slug"]}">
+      <button type="button" class="detalhe__fechar" data-fechar aria-label="Fechar">✕</button>
+      <div class="detalhe__hero">
+        <div>
+          <div class="sol-hero__selos">
+            <span class="selo">{svg(s["icone"], "selo__icone")} {nome} · {escape(s["segmento"])}</span>
+            <span class="status-tag status-tag--{status_cls}">{escape(status)}</span>
+          </div>
+          <h2 id="titulo-{s["slug"]}">{s["titulo"]}</h2>
+          <p class="detalhe__texto">{escape(s["descricao"])}</p>
+          <a href="#" class="btn" data-servico="{servico}">{svg("whats")} {cta}</a>
+        </div>
+        <div>{visual}
         </div>
       </div>
 
@@ -341,7 +383,7 @@ def detalhe(s):
         <div>
           <p class="rotulo">Implantação e investimento</p>
           <h3>{"Projeto piloto sob medida" if dev else "Pronto em pouco tempo, com a sua marca"}</h3>
-          <p>{texto_impl}</p>
+          <p>{s.get("investimento", texto_impl)}</p>
           <a href="#" class="btn" data-servico="{servico}">{svg("whats")} {cta}</a>
         </div>
         <ul>{inclui}<li>Proposta por escrito com escopo, prazo e valor</li><li>Pagamento em 2 etapas: 50% para iniciar e 50% na entrega aprovada</li></ul>
