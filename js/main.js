@@ -79,3 +79,9 @@ const marcarMenu = new IntersectionObserver((entradas) => {
   });
 }, { rootMargin: "-45% 0px -50% 0px" });
 secoesMenu.forEach((s) => marcarMenu.observe(s));
+
+// Medição: qual solução as pessoas abrem (só funciona com o Umami ligado em config.js)
+document.querySelectorAll("dialog.detalhe").forEach((d) =>
+  new MutationObserver(() => { if (d.open) window.umami?.track("Detalhe de solução", { solucao: d.id.replace("solucao-", "") }); })
+    .observe(d, { attributes: true, attributeFilter: ["open"] })
+);
