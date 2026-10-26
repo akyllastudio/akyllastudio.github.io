@@ -59,7 +59,8 @@ SOLUCOES = [
         "slug": "cardapio-digital", "nome": "Cardápio Digital", "icone": "cardapio", "segmento": "Delivery, mesas e balcão",
         "status": ("Pronto para implantar", "pronto"),
         "servico": "Solução Cardápio Digital (pedidos pelo WhatsApp)",
-        "imagem": "assets/img/cardapio-digital.jpg", "imagem_url": "cardápio digital · vitrine de modelos",
+        "imagem": "assets/img/cardapio-digital.jpg", "imagem_url": "tanattos18.github.io/Cardapio_Digital",
+        "demo_url": "https://tanattos18.github.io/Cardapio_Digital/", "demo_rotulo": "Ver os 15 modelos",
         "titulo": "Seu cardápio no celular do cliente, com <em>pedido direto no WhatsApp</em>",
         "descricao": "Uma página própria com produtos, fotos, preços, horários e endereço. O cliente monta o pedido, escolhe entrega, retirada ou mesa, e tudo chega organizado no seu WhatsApp. Sem aplicativo para baixar e sem comissão por pedido. São 15 modelos prontos em 3 estilos para escolher.",
         "seo": "Cardápio digital com pedido pelo WhatsApp e QR Code na mesa para hamburguerias, pizzarias, restaurantes, espetinhos e pamonharias.",
@@ -329,13 +330,16 @@ def detalhe(s):
                   if dev else
                   "Como a base já existe, a implantação é mais rápida e o custo menor do que um sistema do zero. O valor depende do tamanho da operação e das adaptações, e você recebe tudo por escrito antes de começar.")
 
+    demo = (f'\n            <a href="{s["demo_url"]}" class="btn btn--fantasma" target="_blank" rel="noopener">{escape(s["demo_rotulo"])} ↗</a>'
+            if s.get("demo_url") else "")
+
     if s.get("imagem"):
         visual = f'''
           <div class="app app--print">
             <div class="app__barra"><i></i><i></i><i></i><span>{escape(s["imagem_url"])}</span></div>
-            <img src="{s["imagem"]}" alt="" width="1440" height="900" loading="lazy">
+            <a href="{s.get("demo_url", "#")}" target="_blank" rel="noopener" tabindex="-1"><img src="{s["imagem"]}" alt="" width="1440" height="900" loading="lazy"></a>
           </div>
-          <p class="app__aviso">Vitrine real do projeto.</p>'''
+          <p class="app__aviso">Vitrine real do projeto, no ar. Clique para abrir.</p>'''
     else:
         visual = f'''
           <div class="app">
@@ -364,7 +368,9 @@ def detalhe(s):
           </div>
           <h2 id="titulo-{s["slug"]}">{s["titulo"]}</h2>
           <p class="detalhe__texto">{escape(s["descricao"])}</p>
-          <a href="#" class="btn" data-servico="{servico}">{svg("whats")} {cta}</a>
+          <div class="detalhe__acoes">
+            <a href="#" class="btn" data-servico="{servico}">{svg("whats")} {cta}</a>{demo}
+          </div>
         </div>
         <div>{visual}
         </div>
