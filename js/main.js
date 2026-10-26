@@ -68,3 +68,14 @@ if (location.hash.startsWith("#solucao-")) {
   document.getElementById("solucoes")?.scrollIntoView();
   abrirDetalhe(location.hash.slice(1));
 }
+
+// Menu: destaca a seção que está na tela
+const linksMenu = [...document.querySelectorAll('.menu a[href^="#"]:not(.btn)')];
+const secoesMenu = linksMenu.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+const marcarMenu = new IntersectionObserver((entradas) => {
+  entradas.forEach((e) => {
+    if (!e.isIntersecting) return;
+    linksMenu.forEach((a) => a.classList.toggle("ativo", a.getAttribute("href") === `#${e.target.id}`));
+  });
+}, { rootMargin: "-45% 0px -50% 0px" });
+secoesMenu.forEach((s) => marcarMenu.observe(s));

@@ -337,7 +337,7 @@ def detalhe(s):
         visual = f'''
           <div class="app app--print">
             <div class="app__barra"><i></i><i></i><i></i><span>{escape(s["imagem_url"])}</span></div>
-            <a href="{s.get("demo_url", "#")}" target="_blank" rel="noopener" tabindex="-1"><img src="{s["imagem"]}" alt="" width="1440" height="900" loading="lazy"></a>
+            <a href="{s.get("demo_url", "#")}" target="_blank" rel="noopener" tabindex="-1"><picture><source type="image/webp" srcset="{s["imagem"].replace(".jpg", "-640.webp")} 640w, {s["imagem"].replace(".jpg", ".webp")} 1200w" sizes="(max-width: 860px) 100vw, 480px"><img src="{s["imagem"]}" alt="" width="1440" height="900" loading="lazy"></picture></a>
           </div>
           <p class="app__aviso">Vitrine real do projeto, no ar. Clique para abrir.</p>'''
     else:
