@@ -22,7 +22,7 @@ Atendimento direto com o desenvolvedor · Goiânia/GO e todo o Brasil
 | Serviço | Para quem | A partir de |
 |---|---|---|
 | **Página de vendas** | Anúncios, lançamentos, infoprodutos | R$ 900 |
-| **Cardápio / catálogo digital** | Restaurantes, lojas, pedidos pelo WhatsApp | R$ 1.200 |
+| **[Cardápio digital](https://tanattos18.github.io/Cardapio_Digital/)** | Restaurantes, lanchonetes e delivery: 30 modelos, pedido pelo WhatsApp | R$ 297 |
 | **Site institucional** | Clínicas, escritórios, prestadores de serviço | R$ 1.800 |
 | **Loja virtual** | Lojas que querem vender online com loja própria | R$ 4.500 |
 | **Sistema sob medida** | Negócios que cresceram e se perderam nas planilhas | sob consulta |
@@ -48,7 +48,7 @@ Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https
   </tr>
 </table>
 
-**[Cardápio Digital](https://tanattos18.github.io/Cardapio_Digital/)**: vitrine no ar com 15 modelos de cardápio digital para hamburguerias, pizzarias, restaurantes, espetinhos e pamonharias. Pedido pelo WhatsApp e QR Code nas mesas.
+**[Cardápio Digital](https://tanattos18.github.io/Cardapio_Digital/)**: vitrine no ar com 30 modelos de cardápio digital para hamburguerias, pizzarias, restaurantes, espetinhos, pamonharias, confeitarias, açaí, salgados para festa, marmitas fit e pastelarias. Planos a partir de R$ 297. Pedido pelo WhatsApp e QR Code nas mesas.
 
 ## Soluções prontas para adaptar
 
@@ -56,7 +56,7 @@ Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de tr
 
 | Solução | O que faz | Situação |
 |---|---|---|
-| **[Cardápio Digital](https://akyllastudio.github.io/#solucao-cardapio-digital)** | Cardápio no celular com pedido pelo WhatsApp e QR Code nas mesas. [Ver os 15 modelos](https://tanattos18.github.io/Cardapio_Digital/) | Pronto para implantar |
+| **[Cardápio Digital](https://akyllastudio.github.io/#solucao-cardapio-digital)** | Cardápio no celular com pedido pelo WhatsApp e QR Code nas mesas. [Ver os 30 modelos](https://tanattos18.github.io/Cardapio_Digital/) | Pronto para implantar |
 | **[PetFlow](https://akyllastudio.github.io/#solucao-petflow)** | Gestão para pet shops: clientes, animais, agenda, PDV, estoque e assinaturas | Pronto para implantar |
 | **[SaaS Restaurante](https://akyllastudio.github.io/#solucao-restaurante)** | Pedidos pelo WhatsApp, cardápio por QR Code e tela de cozinha | Pronto para implantar |
 | **[Painel Digital](https://akyllastudio.github.io/#solucao-painel-digital)** | Atendimento, filas de espera e painéis de chamada em tempo real | Base adaptável |
