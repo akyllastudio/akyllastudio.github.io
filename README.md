@@ -50,6 +50,8 @@ Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https
 
 **[Cardápio Digital](https://tanattos18.github.io/Cardapio_Digital/)**: vitrine no ar com 30 modelos de cardápio digital para hamburguerias, pizzarias, restaurantes, espetinhos, pamonharias, confeitarias, açaí, salgados para festa, marmitas fit e pastelarias. Planos a partir de R$ 297. Pedido pelo WhatsApp e QR Code nas mesas.
 
+**CuraLog** · projeto para cliente, concluído: sistema de gestão para empresa de enfermagem e logística home care, com lançamentos, tarifas, fechamento mensal com Excel e PDF, recebimentos, tratamentos previsto × realizado e resultado financeiro. [Ver no site](https://akyllastudio.github.io/#projeto-curalog)
+
 ## Soluções prontas para adaptar
 
 Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de trabalhar de cada cliente. Implantação mais rápida e custo menor do que começar do zero.
