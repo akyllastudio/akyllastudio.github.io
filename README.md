@@ -53,6 +53,8 @@ Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https
 
 **CuraLog** · projeto para cliente, concluído: sistema de gestão para empresa de enfermagem e logística home care, com lançamentos, tarifas, fechamento mensal com Excel e PDF, recebimentos, tratamentos previsto × realizado e resultado financeiro. [Ver no site](https://akyllastudio.github.io/#projeto-curalog)
 
+**[Vitor Santos · Contador](https://tanattos18.github.io/Vitor_Santos_Contador/)** · projeto para cliente, no ar: site institucional com cartão de visita digital, especialidades, calculadora de impostos (MEI, Simples Nacional e Lucro Presumido), simulador de investimentos e contato direto pelo WhatsApp.
+
 ## Soluções prontas para adaptar
 
 Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de trabalhar de cada cliente. Implantação mais rápida e custo menor do que começar do zero.
