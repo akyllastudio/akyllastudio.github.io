@@ -11,6 +11,7 @@ Atendimento direto com o desenvolvedor · Goiânia/GO e todo o Brasil
 
 [**🌐 Ver o site**](https://akyllastudio.github.io) &nbsp;·&nbsp;
 [**💬 Orçamento no WhatsApp**](https://wa.me/5562991657619?text=Ol%C3%A1!%20Vi%20seu%20GitHub%20e%20quero%20um%20or%C3%A7amento.) &nbsp;·&nbsp;
+[**📸 Instagram**](https://www.instagram.com/akylla.studio.ai/) &nbsp;·&nbsp;
 [**🔗 Todos os links**](https://akyllastudio.github.io/links.html)
 
 </div>
@@ -79,6 +80,7 @@ Fale com a gente: [WhatsApp](https://wa.me/5562991657619?text=Ol%C3%A1!%20Quero%
 ## Contato
 
 - **WhatsApp:** [(62) 99165-7619](https://wa.me/5562991657619)
+- **Instagram:** [@akylla.studio.ai](https://www.instagram.com/akylla.studio.ai/)
 - **Site:** [akyllastudio.github.io](https://akyllastudio.github.io)
 - **Links e redes:** [akyllastudio.github.io/links.html](https://akyllastudio.github.io/links.html)
 - **GitHub:** [@akyllastudio](https://github.com/akyllastudio) · [@Tanattos18](https://github.com/Tanattos18)

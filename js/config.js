@@ -6,7 +6,7 @@ const CONFIG = {
   whatsapp: "5562991657619",
 
   // Deixe "" para esconder o botão da rede no site
-  instagram: "",  // ex: "https://instagram.com/akyllastudio"
+  instagram: "https://www.instagram.com/akylla.studio.ai/",
   linkedin: "",   // ex: "https://linkedin.com/in/seu_usuario"
   facebook: "",   // ex: "https://facebook.com/akyllastudio"
   tiktok: "",     // ex: "https://tiktok.com/@akyllastudio"
@@ -67,7 +67,7 @@ document.querySelectorAll("[data-whatsapp], [data-servico]").forEach((el) => {
   el.dataset.umamiEventPagina = pagina;
 });
 document.querySelectorAll('a[href^="http"]:not([href*="wa.me"])').forEach((el) => {
-  const rede = el.dataset.rede;
+  const rede = el.dataset.rede || (el.hostname.match(/(instagram|linkedin|facebook|tiktok|youtube)\./) || [])[1];
   el.dataset.umamiEvent = rede ? "Rede social" : "Produto externo";
   el.dataset.umamiEventDestino = rede || new URL(el.href).hostname + new URL(el.href).pathname.replace(/\/$/, "");
   el.dataset.umamiEventPagina = pagina;
