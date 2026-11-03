@@ -55,6 +55,12 @@ Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https
 
 **[Vitor Santos · Contador](https://tanattos18.github.io/Vitor_Santos_Contador/)** · projeto para cliente, no ar: site institucional com cartão de visita digital, especialidades, calculadora de impostos (MEI, Simples Nacional e Lucro Presumido), simulador de investimentos e contato direto pelo WhatsApp.
 
+**[Supermercado Caixeta](https://tanattos18.github.io/Sistema-SaaS-Cleudes/site-demo/)** · projeto para cliente, no ar: loja de pedidos online com mais de 500 produtos, Pix que confirma sozinho, cartão pelo Mercado Pago, impressão automática do pedido no balcão e painel com promoções agendadas e importação por planilha.
+
+**[Doçuras da Lorrany](https://tanattos18.github.io/Catalago_Lorrany/)** · projeto para cliente, no ar: catálogo de bolos e docinhos com encomenda por data e horário, Pix e painel para a dona atualizar tudo sozinha.
+
+**[Akylla Bot](https://bot.akyllagestao.com.br/)** · produto próprio, no ar: atendimento e pedidos no WhatsApp com IA, transferência para atendente e painel para cada negócio.
+
 ## Soluções prontas para adaptar
 
 Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de trabalhar de cada cliente. Implantação mais rápida e custo menor do que começar do zero.
