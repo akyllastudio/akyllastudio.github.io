@@ -73,7 +73,7 @@ Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de tr
 | **[Painel Digital](https://akyllastudio.github.io/#solucao-painel-digital)** | Atendimento, filas de espera e painéis de chamada em tempo real | Base adaptável |
 | **[Burger Bot](https://akyllastudio.github.io/#solucao-burger-bot)** | Pedidos de delivery pelo WhatsApp com PIX e aviso para a cozinha | Pronto para implantar |
 | **[Affiliate Bot](https://akyllastudio.github.io/#solucao-affiliate-bot)** | Publicação automática de ofertas da Shopee, Amazon e Mercado Livre no Telegram | Pronto para implantar |
-| **[TikTok Pipeline](https://akyllastudio.github.io/#solucao-tiktok-pipeline)** | Produção de vídeos curtos com IA, do roteiro à publicação | Pronto para implantar |
+| **[Vídeo 3D Explicativo](https://akyllastudio.github.io/#solucao-video-3d)** | Vídeos com cenas em 3D, narração e legendas para explicar produtos e serviços ([exemplo](https://youtube.com/shorts/fERgZBi4-dY)) | Disponível |
 | **[AtlasOps AI](https://akyllastudio.github.io/#solucao-atlasops-ai)** | Atendimento e automação com IA para pequenas e médias empresas | Em desenvolvimento |
 
 Fale com a gente: [WhatsApp](https://wa.me/5562991657619?text=Ol%C3%A1!%20Quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20prontas%20da%20Akylla%20Studio.) · [ver no site](https://akyllastudio.github.io/#solucoes)

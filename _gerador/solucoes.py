@@ -243,34 +243,35 @@ SOLUCOES = [
         ],
     },
     {
-        "slug": "tiktok-pipeline", "nome": "TikTok Pipeline", "icone": "video", "segmento": "Criadores e marcas",
-        "status": ("Pronto para implantar", "pronto"),
-        "servico": "Solução TikTok Pipeline (vídeos com IA)",
-        "titulo": "Vídeos curtos com IA, <em>do roteiro à publicação</em>, em escala",
-        "descricao": "TikTok Pipeline organiza a produção de vídeos curtos com inteligência artificial: roteiros em lote, thumbnails, vozes e pastas prontas para editar e publicar, com opções para diferentes orçamentos.",
-        "seo": "Produção de vídeos curtos para TikTok com IA: roteiros em lote, thumbnails, vozes e publicação. Akylla Studio.",
-        "menu": ["Roteiros", "Thumbnails", "Vozes", "Edição", "Publicação"],
-        "kpis": [("Roteiros", "30"), ("Vídeos prontos", "12"), ("Contas", "3")],
-        "lista": [("Vídeo 07 · gancho curiosidade", "publicado", "a"), ("Vídeo 08 · lista top 5", "editando", "b"), ("Lote 03 · 10 roteiros", "gerado", "c")],
+        "slug": "video-3d", "nome": "Vídeo 3D Explicativo", "icone": "video", "segmento": "Empresas, oficinas, clínicas e cursos",
+        "status": ("Disponível", "pronto"),
+        "servico": "Vídeo 3D Explicativo",
+        "imagem": "assets/img/video-3d.jpg", "imagem_url": "youtube.com/@AkyllaStudio",
+        "imagem_aviso": "Quadro do nosso vídeo sobre motores, publicado no YouTube. Clique para assistir.",
+        "demo_url": "https://youtube.com/shorts/fERgZBi4-dY", "demo_rotulo": "Assistir ao vídeo de exemplo",
+        "titulo": "Mostre <em>por dentro</em> como funciona o que você vende",
+        "descricao": "Criamos vídeos verticais com cenas em 3D, narração e legendas, que explicam um produto, um serviço ou um processo de um jeito que foto e texto não conseguem. Cada cena é feita sob medida para o seu assunto.",
+        "seo": "Vídeos explicativos em 3D para empresas, com narração e legendas, prontos para Reels, TikTok e YouTube Shorts. Akylla Studio.",
+        "menu": [], "kpis": [], "lista": [],
         "dores": [
-            ("Falta de ideia todo dia", "Pensar em roteiro novo diariamente trava a constância."),
-            ("Produção lenta", "Escrever, gravar, criar capa e organizar arquivos toma horas por vídeo."),
-            ("Postagem irregular", "Sem processo, a frequência cai e o algoritmo para de entregar."),
+            ("Difícil de explicar", "O cliente não entende o que acontece por dentro do produto ou do serviço, e desconfia do preço."),
+            ("Conteúdo sem diferencial", "Vídeo de banco de imagens se parece com o de todos os concorrentes."),
+            ("Dá para mostrar pouco", "Gravar por dentro de uma máquina ou de um processo muitas vezes é impossível."),
         ],
         "recursos": [
-            ("roteiro", "Roteiros em lote", "Vários roteiros de uma vez, com ganchos pensados para prender a atenção."),
-            ("imagem", "Thumbnails com IA", "Capas geradas por IA para cada vídeo."),
-            ("chat", "Vozes geradas", "Narração gerada por IA para quem não quer aparecer ou gravar."),
-            ("planilha", "Pastas organizadas", "Cada vídeo com roteiro, capa e áudio prontos na sua pasta."),
-            ("envio", "Publicação", "Fluxo para publicar, inclusive em mais de uma conta."),
-            ("grafico", "Modos por orçamento", "Opções do gratuito ao pago, conforme as ferramentas que você quer usar."),
+            ("roteiro", "Roteiro", "Texto escrito com você, com uma abertura que prende a atenção e linguagem simples."),
+            ("imagem", "Cenas em 3D sob medida", "Peças, ambientes e movimentos modelados para o assunto do vídeo."),
+            ("chat", "Narração", "Voz sintética ou gravação sua, combinada antes de começar."),
+            ("planilha", "Legendas e destaques", "Legendas na tela e o nome de cada parte no momento em que ela é explicada."),
+            ("envio", "Pronto para as redes", "Formato vertical para Reels, TikTok e YouTube Shorts."),
+            ("estrela", "Sua marca", "Nome e cores da sua empresa no vídeo."),
         ],
-        "para_quem": ["Criadores de conteúdo", "Marcas e lojas", "Agências", "Perfis de nicho"],
-        "inclui": ["Configuração das ferramentas de IA", "Modelo de roteiro para o seu nicho", "Organização do fluxo de produção", "Treinamento de uso"],
+        "para_quem": ["Oficinas e autopeças", "Clínicas e consultórios", "Indústrias e técnicos", "Cursos e professores"],
+        "inclui": ["Roteiro aprovado por você", "Cenas em 3D e animação", "Narração e legendas", "Arquivo final em vídeo vertical"],
         "faq": [
-            ("Preciso aparecer nos vídeos?", "Não necessariamente. O fluxo funciona com narração por IA e imagens."),
-            ("As ferramentas de IA são pagas?", "Há modos gratuitos e pagos. Mostramos o custo de cada opção antes de começar."),
-            ("Serve para outras redes?", "Os vídeos verticais também servem para Reels e Shorts."),
+            ("Preciso aparecer ou gravar alguma coisa?", "Não. O vídeo é todo feito em 3D. Você só revisa o roteiro e o resultado."),
+            ("Vocês publicam nas minhas redes?", "O vídeo é entregue pronto para você publicar. Se quiser que a gente cuide disso, combinamos na conversa."),
+            ("Serve para qualquer assunto?", "Funciona melhor quando há algo para mostrar: uma peça, um procedimento, um processo. Avaliamos a sua ideia antes de fechar."),
         ],
     },
     {
@@ -339,7 +340,7 @@ def detalhe(s):
             <div class="app__barra"><i></i><i></i><i></i><span>{escape(s["imagem_url"])}</span></div>
             <a href="{s.get("demo_url", "#")}" target="_blank" rel="noopener" tabindex="-1"><picture><source type="image/webp" srcset="{s["imagem"].replace(".jpg", "-640.webp")} 640w, {s["imagem"].replace(".jpg", ".webp")} 1200w" sizes="(max-width: 860px) 100vw, 480px"><img src="{s["imagem"]}" alt="" width="1440" height="900" loading="lazy"></picture></a>
           </div>
-          <p class="app__aviso">Vitrine real do projeto, no ar. Clique para abrir.</p>'''
+          <p class="app__aviso">{escape(s.get("imagem_aviso", "Vitrine real do projeto, no ar. Clique para abrir."))}</p>'''
     else:
         visual = f'''
           <div class="app">

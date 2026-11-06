@@ -9,8 +9,8 @@ const CONFIG = {
   instagram: "https://www.instagram.com/akylla.studio.ai/",
   linkedin: "",   // ex: "https://linkedin.com/in/seu_usuario"
   facebook: "",   // ex: "https://facebook.com/akyllastudio"
-  tiktok: "",     // ex: "https://tiktok.com/@akyllastudio"
-  youtube: "",    // ex: "https://youtube.com/@akyllastudio"
+  tiktok: "https://www.tiktok.com/@akylla.studio",
+  youtube: "https://www.youtube.com/@AkyllaStudio",
   email: "",      // ex: "contato@akyllastudio.com.br"
   github: "https://github.com/akyllastudio",
 
