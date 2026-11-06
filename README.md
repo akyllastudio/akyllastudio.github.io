@@ -26,6 +26,7 @@ Atendimento direto com o desenvolvedor · Goiânia/GO e todo o Brasil
 | **[Cardápio digital](https://tanattos18.github.io/Cardapio_Digital/)** | Restaurantes, lanchonetes e delivery: 30 modelos, pedido pelo WhatsApp | R$ 297 |
 | **Site institucional** | Clínicas, escritórios, prestadores de serviço | R$ 1.800 |
 | **Loja virtual** | Lojas que querem vender online com loja própria | R$ 4.500 |
+| **[Vídeo 3D explicativo](https://akyllastudio.github.io/#solucao-video-3d)** | Empresas que precisam mostrar como um produto ou serviço funciona | R$ 1.200 |
 | **Sistema sob medida** | Negócios que cresceram e se perderam nas planilhas | sob consulta |
 | **Automações e bots** | Atendimento, pedidos e tarefas no WhatsApp e no Telegram | sob consulta |
 | **Manutenção mensal** | Hospedagem, backups e pequenas alterações | R$ 150/mês |

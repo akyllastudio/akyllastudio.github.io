@@ -267,7 +267,9 @@ SOLUCOES = [
             ("estrela", "Sua marca", "Nome e cores da sua empresa no vídeo."),
         ],
         "para_quem": ["Oficinas e autopeças", "Clínicas e consultórios", "Indústrias e técnicos", "Cursos e professores"],
-        "inclui": ["Roteiro aprovado por você", "Cenas em 3D e animação", "Narração e legendas", "Arquivo final em vídeo vertical"],
+        "inclui": ["Vídeo curto, até 60 segundos: R$ 1.200", "Vídeo completo, até 3 minutos: R$ 2.500", "Pacote com 4 vídeos curtos por mês: R$ 3.800/mês", "Em todos: roteiro aprovado por você, cenas em 3D, narração, legendas e 2 rodadas de ajuste"],
+        "investimento_titulo": "Feito sob medida, com preço fechado antes de começar",
+        "investimento": "A partir de R$ 1.200 por vídeo, com 50% para iniciar e 50% na entrega aprovada. Locutor profissional, se você preferir, tem o custo informado na proposta.",
         "faq": [
             ("Preciso aparecer ou gravar alguma coisa?", "Não. O vídeo é todo feito em 3D. Você só revisa o roteiro e o resultado."),
             ("Vocês publicam nas minhas redes?", "O vídeo é entregue pronto para você publicar. Se quiser que a gente cuide disso, combinamos na conversa."),
@@ -389,7 +391,7 @@ def detalhe(s):
       <div class="investimento">
         <div>
           <p class="rotulo">Implantação e investimento</p>
-          <h3>{"Projeto piloto sob medida" if dev else "Pronto em pouco tempo, com a sua marca"}</h3>
+          <h3>{"Projeto piloto sob medida" if dev else s.get("investimento_titulo", "Pronto em pouco tempo, com a sua marca")}</h3>
           <p>{s.get("investimento", texto_impl)}</p>
           <a href="#" class="btn" data-servico="{servico}">{svg("whats")} {cta}</a>
         </div>
